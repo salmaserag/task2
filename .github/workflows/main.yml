@@ -14,5 +14,10 @@ jobs:
       - name: 'Testing Github action'
         run: pwd
 
-      - name: 'Print folder contents'
+      - name: 'Before'
+        run: ls
+
+      - uses: actions/checkout@v3
+
+      - name: 'After'
         run: ls
