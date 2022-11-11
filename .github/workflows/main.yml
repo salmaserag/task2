@@ -11,13 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github action'
-        run: pwd
-
-      - name: 'Before'
-        run: ls
-
+     
       - uses: actions/checkout@v3
 
-      - name: 'After'
-        run: ls
+      - name: 'login to docker hub'
+        run: docker login --username salmahamdyy --password dckr_pat_4BOnMukdpzxC4_oyAi5N0iOkXq0
