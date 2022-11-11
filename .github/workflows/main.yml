@@ -14,5 +14,5 @@ jobs:
       - name: 'Testing Github action'
         run: pwd
 
-      - name: 'Testing Github action'
-        run: echo Os1
+      - name: 'Print folder contents'
+        run: ls
