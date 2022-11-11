@@ -20,5 +20,5 @@ jobs:
       - name: "Bulding docker image"
         run: docker build -t ${{secrets.DOCKER_USERNAME}}/aisel .
 
-       - name: "pushing to docker hub"
-         run: docker push ${{secrets.DOCKER_USERNAME}}/aisel .
+      - name: "pushing to docker hub"
+        run: docker push ${{secrets.DOCKER_USERNAME}}/aisel .
